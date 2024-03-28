@@ -6,7 +6,7 @@
 /*   By: jolecomt <jolecomt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 23:56:44 by jolecomt          #+#    #+#             */
-/*   Updated: 2024/03/26 17:13:24 by jolecomt         ###   ########.fr       */
+/*   Updated: 2024/03/26 17:22:19 by jolecomt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,4 +68,5 @@ int main(void)
 	_fragTest.attack("Almarico");
 	_fragTestCpy.highFivesGuys();
 	std::cout<<std::endl<<std::endl<<std::endl<<std::endl;
+	return (0);
 }
