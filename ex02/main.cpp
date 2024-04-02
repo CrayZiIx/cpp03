@@ -16,48 +16,48 @@
 
 int main(void)
 {
-	ClapTrap _clapTest;
-	ClapTrap _clapTestCpy(_clapTest);
-	ClapTrap _clapTestName("Random");
+	// ClapTrap _clapTest;
+	// ClapTrap _clapTestCpy(_clapTest);
+	// ClapTrap _clapTestName("Random");
 
 	/**********TEST FOR PART 1************/
-	_clapTest.takeDamage(10);
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.beRepaired(10);
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");	
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
-	_clapTest.attack("Adel");
+	// _clapTest.takeDamage(10);
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.beRepaired(10);
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");	
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
+	// _clapTest.attack("Adel");
 
-	_clapTestCpy.takeDamage(10);
-	_clapTestCpy.beRepaired(10);
-	_clapTestCpy.attack("Medhi");
+	// _clapTestCpy.takeDamage(10);
+	// _clapTestCpy.beRepaired(10);
+	// _clapTestCpy.attack("Medhi");
 
-	_clapTestName.takeDamage(10);
-	_clapTestName.beRepaired(10);
-	_clapTestName.attack("mammot");
-	std::cout<<std::endl<<std::endl<<std::endl<<std::endl;
+	// _clapTestName.takeDamage(10);
+	// _clapTestName.beRepaired(10);
+	// _clapTestName.attack("mammot");
+	// std::cout<<std::endl<<std::endl<<std::endl<<std::endl;
 	/**********TEST FOR PART 2************/
-	ScavTrap _scavTest;
-	ScavTrap _scavTestCpy(_scavTest);
+	// ScavTrap _scavTest;
+	// ScavTrap _scavTestCpy(_scavTest);
 
-	_scavTest.takeDamage(100);
-	_scavTest.attack("Tmarie");
-	_scavTest.beRepaired(50);
-	_scavTest.attack("Tmarie");
-	_scavTestCpy.guardGate();
-	std::cout<<std::endl<<std::endl<<std::endl<<std::endl;
+	// _scavTest.takeDamage(100);
+	// _scavTest.attack("Tmarie");
+	// _scavTest.beRepaired(50);
+	// _scavTest.attack("Tmarie");
+	// _scavTestCpy.guardGate();
+	// std::cout<<std::endl<<std::endl<<std::endl<<std::endl;
 	/**********TEST FOR PART 3************/
 	FragTrap _fragTest;
 	FragTrap _fragTestCpy(_fragTest);
