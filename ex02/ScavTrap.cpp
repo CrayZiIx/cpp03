@@ -21,6 +21,16 @@ ScavTrap::ScavTrap() : ClapTrap()
 	return ;
 }
 
+ScavTrap::ScavTrap(const std::string& _name) : ClapTrap()
+{
+	std::cout<<"Constructor called with ref to clapTrap's name called"<<std::endl;
+	this->name = _name;
+	this->HitPoints = 100;
+	this->Energy = 50;
+	this->Attack = 20;
+	return ;
+}
+
 ScavTrap::ScavTrap(const ScavTrap& _scavTrap) : ClapTrap(_scavTrap)
 {
 	std::cout<<"Constructor ScavTrap called with ref to clapTrap obj called"<<std::endl;

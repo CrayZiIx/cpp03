@@ -21,6 +21,16 @@ FragTrap::FragTrap() : ClapTrap()
 	return ;
 }
 
+FragTrap::FragTrap(const std::string& _name) : ClapTrap()
+{
+	std::cout<<"Constructor called with ref to clapTrap's name called"<<std::endl;
+	this->name = _name;
+	this->HitPoints = 100;
+	this->Energy = 50;
+	this->Attack = 20;
+	return ;
+}
+
 FragTrap::FragTrap(const FragTrap& _fragTrap) : ClapTrap(_fragTrap)
 {
 	std::cout<<"Constructor FragTrap called with ref to clapTrap obj called"<<std::endl;

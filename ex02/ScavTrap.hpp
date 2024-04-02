@@ -20,6 +20,7 @@ class ScavTrap : public ClapTrap
 	protected:
 	public:
 		ScavTrap();
+		ScavTrap(const std::string& _name);
 		ScavTrap(const ScavTrap &other);
 		~ScavTrap();
 		void attack(const std::string& target);

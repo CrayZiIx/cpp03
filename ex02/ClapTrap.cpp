@@ -58,8 +58,17 @@ void ClapTrap::takeDamage(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	this->HitPoints += amount;
-	std::cout<<"ClapTrap : "<<this->name<<" has been healed by "<<amount<<" health point"<<std::endl;
+	if (this->Energy > 0 && this->HitPoints > 0)
+	{
+		this->Energy--;
+		this->HitPoints += amount;
+		std::cout<<"ClapTrap : "<<this->name<<" has been healed by "<<amount<<" health point"<<std::endl;
+	}
+	else 
+	{
+		std::cout<<"ClapTrap : "<<this->name<<" has "<<this->Energy<<" energy and "<<this->HitPoints<<" health point ..."<<std::endl;
+	}
+	return ;
 }
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &other)
