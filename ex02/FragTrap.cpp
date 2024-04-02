@@ -14,7 +14,7 @@
 
 FragTrap::FragTrap() : ClapTrap()
 {
-	this->Health = 100;
+	this->HitPoints = 100;
 	this->Energy = 100;
 	this->Attack = 30;
 	std::cout<<"Constructor FragTrap called with no parameters"<<std::endl;
@@ -35,14 +35,14 @@ FragTrap::~FragTrap()
 
 void FragTrap::attack(const std::string& target)
 {
-	if (this->Energy > 0 && this->Health > 0)
+	if (this->Energy > 0 && this->HitPoints > 0)
 	{
 		this->Energy--;
 		std::cout<<"FragTrap : "<<this->name<<" attacks "<<target<<", causing "<<this->Attack<<" points of damage!"<<std::endl;
 	}
 	else 
 	{
-		std::cout<<"FragTrap : "<<this->name<<" has "<<this->Energy<<" energy and "<<this->Health<<" health point ..."<<std::endl;
+		std::cout<<"FragTrap : "<<this->name<<" has "<<this->Energy<<" energy and "<<this->HitPoints<<" health point ..."<<std::endl;
 	}
 	return ;
 }
@@ -58,7 +58,7 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
 	this->name = other.name;
 	this->Attack = other.Attack;
 	this->Energy = other.Energy;
-	this->Health = other.Health;
+	this->HitPoints = other.HitPoints;
 	return (*this);
 }
 	

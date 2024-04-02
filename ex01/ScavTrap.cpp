@@ -14,7 +14,7 @@
 
 ScavTrap::ScavTrap() : ClapTrap()
 {
-	this->Health = 100;
+	this->HitPoints = 100;
 	this->Energy = 50;
 	this->Attack = 20;
 	std::cout<<"Constructor ScavTrap called with no parameters"<<std::endl;
@@ -35,14 +35,14 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::attack(const std::string& target)
 {
-	if (this->Energy > 0 && this->Health > 0)
+	if (this->Energy > 0 && this->HitPoints > 0)
 	{
 		this->Energy--;
 		std::cout<<"ScavTrap : "<<this->name<<" attacks "<<target<<", causing "<<this->Attack<<" points of damage!"<<std::endl;
 	}
 	else 
 	{
-		std::cout<<"ScavTrap : "<<this->name<<" has "<<this->Energy<<" energy and "<<this->Health<<" health point ..."<<std::endl;
+		std::cout<<"ScavTrap : "<<this->name<<" has "<<this->Energy<<" energy and "<<this->HitPoints<<" health point ..."<<std::endl;
 	}
 	return ;
 }
@@ -58,7 +58,7 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 	this->name = other.name;
 	this->Attack = other.Attack;
 	this->Energy = other.Energy;
-	this->Health = other.Health;
+	this->HitPoints = other.HitPoints;
 	return (*this);
 }
 	

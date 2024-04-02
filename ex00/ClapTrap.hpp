@@ -22,7 +22,7 @@ class ClapTrap
 {
 	private:
 		std::string name;
-		unsigned int Health;
+		unsigned int HitPoints;
 		unsigned int Energy;
 		unsigned int Attack;
 	public:
